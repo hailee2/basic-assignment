@@ -23,7 +23,9 @@ public class MemoController {
     }
 
     @GetMapping("/memos")
-    public ResponseEntity<List<MemoResponse>> getMemos() {return ResponseEntity.ok(memoService.findMemos());}
+    public ResponseEntity<List<MemoResponse>> getMemos() {
+        return ResponseEntity.ok(memoService.findMemos());
+    }
 
     @GetMapping("/memos/{memoId}")
     public ResponseEntity<MemoResponse> getMemo(
