@@ -10,8 +10,8 @@ public class PostResponse {
     private final Long id;
     private final String title;
     private final String content;
-    private LocalDateTime createdAt;
-    private LocalDateTime modifiedAt;
+    private final LocalDateTime createdAt;
+    private final LocalDateTime modifiedAt;
 
     public PostResponse(Long id, String title, String content, LocalDateTime createdAt, LocalDateTime modifiedAt) {
         this.id = id;
