@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 public class Review extends BaseEntity{
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
-    public String content;
+    private Long id;
+    private String content;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "movie_id", nullable = false)
